@@ -8,7 +8,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 const config = {
   title: 'Gozelle',
   tagline: 'Dinosaurs are cool',
-  url: 'https://gozelle.kozilla.io',
+  url: 'gozelle.github.io',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
