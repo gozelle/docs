@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkgozelle_docs=self.webpackChunkgozelle_docs||[]).push([[945],{6945:function(e,s,c){c.r(s)}}]);
