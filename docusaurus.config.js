@@ -43,9 +43,9 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       navbar: {
-        title: 'My Site',
+        title: 'Gozelle',
         logo: {
-          alt: 'My Site Logo',
+          alt: 'Gozelle Logo',
           src: 'img/logo.svg',
         },
         items: [
