@@ -7,7 +7,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'Gozelle',
-  tagline: 'Dinosaurs are cool',
+  tagline: 'Go 基础通用工具库',
   url: 'https://gozelle.kozilla.io',
   baseUrl: '/',
   onBrokenLinks: 'throw',
@@ -53,64 +53,87 @@ const config = {
             type: 'doc',
             docId: 'intro',
             position: 'left',
-            label: 'Tutorial',
+            label: '文档',
           },
-          {to: '/blog', label: 'Blog', position: 'left'},
-          {
-            href: 'https://github.com/facebook/docusaurus',
-            label: 'GitHub',
-            position: 'right',
-          },
+          // {to: '/blog', label: 'Blog', position: 'left'},
+          // {
+          //   href: 'https://github.com/facebook/docusaurus',
+          //   label: 'GitHub',
+          //   position: 'right',
+          // },
         ],
       },
-      footer: {
-        style: 'dark',
-        links: [
-          {
-            title: 'Docs',
-            items: [
-              {
-                label: 'Tutorial',
-                to: '/docs/intro',
-              },
-            ],
-          },
-          {
-            title: 'Community',
-            items: [
-              {
-                label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-              },
-              {
-                label: 'Discord',
-                href: 'https://discordapp.com/invite/docusaurus',
-              },
-              {
-                label: 'Twitter',
-                href: 'https://twitter.com/docusaurus',
-              },
-            ],
-          },
-          {
-            title: 'More',
-            items: [
-              {
-                label: 'Blog',
-                to: '/blog',
-              },
-              {
-                label: 'GitHub',
-                href: 'https://github.com/facebook/docusaurus',
-              },
-            ],
-          },
-        ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
-      },
+      // footer: {
+      //   style: 'dark',
+      //   links: [
+      //     {
+      //       title: 'Docs',
+      //       items: [
+      //         {
+      //           label: 'Tutorial',
+      //           to: '/docs/intro',
+      //         },
+      //       ],
+      //     },
+      //     {
+      //       title: 'Community',
+      //       items: [
+      //         {
+      //           label: 'Stack Overflow',
+      //           href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+      //         },
+      //         {
+      //           label: 'Discord',
+      //           href: 'https://discordapp.com/invite/docusaurus',
+      //         },
+      //         {
+      //           label: 'Twitter',
+      //           href: 'https://twitter.com/docusaurus',
+      //         },
+      //       ],
+      //     },
+      //     {
+      //       title: 'More',
+      //       items: [
+      //         {
+      //           label: 'Blog',
+      //           to: '/blog',
+      //         },
+      //         {
+      //           label: 'GitHub',
+      //           href: 'https://github.com/facebook/docusaurus',
+      //         },
+      //       ],
+      //     },
+      //   ],
+      //   copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+      // },
       prism: {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
+      },
+      // ...
+      algolia: {
+        // The application ID provided by Algolia
+        appId: 'Z9P6UFUJ56',
+
+        // Public API key: it is safe to commit it
+        apiKey: '80648fa2509506c4ba0848f3cd4d8723',
+
+        indexName: 'gozelle',
+
+        // Optional: see doc section below
+        contextualSearch: true,
+
+        // Optional: Specify domains where the navigation should occur through window.location instead on history.push. Useful when our Algolia config crawls multiple documentation sites and we want to navigate with window.location.href to them.
+        externalUrlRegex: 'external\\.com|domain\\.com',
+
+        // Optional: Algolia search parameters
+        searchParameters: {},
+
+        // Optional: path for search page that enabled by default (`false` to disable it)
+        searchPagePath: 'search',
+        //... other Algolia params
       },
     }),
 };
