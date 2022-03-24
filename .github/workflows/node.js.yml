@@ -27,4 +27,7 @@ jobs:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
     - run: npm install
-    - run: export USE_SSH=false && export GIT_USER=koyeo && export GIT_PASS=${{ secrets.password }} && npm run deploy
+    - shell: bash
+      env:
+        PASS: ${{ secrets.PASSWORD }}
+      run: export USE_SSH=false && export GIT_USER=koyeo && export GIT_PASS=$PASS && npm run deploy
