@@ -37,7 +37,7 @@ Run the development server:
 
 ```bash
 cd my-website
-npm run start
+npm run start OKOK
 ```
 
 The `cd` command changes the directory you're working with. In order to work with your newly created Docusaurus site, you'll need to navigate the terminal there.

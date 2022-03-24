@@ -8,13 +8,13 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 const config = {
   title: 'Gozelle',
   tagline: 'Dinosaurs are cool',
-  url: 'gozelle.github.io',
+  url: 'https://gozelle.kozilla.io',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
   organizationName: 'gozelle', // Usually your GitHub org/user name.
-  projectName: 'docs-site', // Usually your repo name.
+  projectName: 'docs', // Usually your repo name.
 
   presets: [
     [
