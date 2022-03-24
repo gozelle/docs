@@ -27,6 +27,8 @@ jobs:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
     - run: npm install
+    - run:  git config --global user.email "im@koyeo.io"
+    - run:  git config --global user.name "koyeo"
     - shell: bash
       env:
         PASS: ${{ secrets.PASSWORD }}
